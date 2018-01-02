@@ -1,0 +1,38 @@
+{
+  "name": "lectusimporter2",
+  "version": "1.0.0",
+  "description": "Imports your movies and TV shows into Lectus and fetches data from the internet ",
+  "main": "index.js",
+  "scripts": {
+    "skip": "set NODE_ENV=skip node server.js",
+    "queue": "set NODE_ENV=queue node server.js",
+    "start": "node server",
+    "build": "electron-packager . lectusimporter alias —-platform=darwin  -—arch=x64 -—version=1.0.0 -—overwrite"
+  },
+  "repository": {
+    "url": "git@masc.kicks-ass.org:srs/Lectus-Importer.git",
+    "type": "git"
+  },
+  "engines": {
+    "node": ">=6.10.0",
+    "npm": ">=4.0.5"
+  },
+  "author": "Silk Road Systems",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chokidar": "^1.6.1",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "images": "^3.0.1",  //@mk
+    "jsmediatags": "3.3.0",
+    "named-regexp": "0.1.1",
+    "nedb": "^1.8.0",
+    "node-persist": "^2.1.0", //@mk
+    "path.join": "^1.0.0",
+    "request": "2.75.0",
+    "uniqid": "^4.1.1",   //@mk
+    "watch": "1.0.1",
+    "winston": "^2.2.0"
+  }
+}

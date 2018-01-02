@@ -1,0 +1,7 @@
+*.jpg
+*.txt
+.vscode
+.idea
+*.db
+*.log
+/node_modules
